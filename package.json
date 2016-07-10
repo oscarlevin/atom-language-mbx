@@ -2,13 +2,13 @@
   "name": "mbxtools",
   "main": "./lib/mbxtools",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "A suite of tools to facilitate writing math textbooks using Mathbook XML",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": "mbxtools:toggle"
   },
-  "repository": "https://github.com/atom/mbxtools",
+  "repository": "https://github.com/atom/atom-mbxtools",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
