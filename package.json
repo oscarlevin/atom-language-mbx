@@ -8,7 +8,7 @@
   "activationCommands": {
     "atom-workspace": "mbxtools:toggle"
   },
-  "repository": "https://github.com/atom/atom-mbxtools",
+  "repository": "https://github.com/oscarlevin/atom-mbxtools",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
