@@ -3,6 +3,44 @@
 'fileTypes': ['mbx']
 'patterns': [
   {
+    'begin': '\<m\>'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.latex'
+    'end': '\<\/m\>'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.latex'
+    'name': 'string.other.math.mbx'
+    'patterns': [
+      {
+        'include': 'text.tex'
+      }
+      {
+        'include': 'text.tex.latex'
+      }
+    ]
+  }
+  {
+    'begin': '\<me\>'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.latex'
+    'end': '\<\/me\>'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.latex'
+    'name': 'string.other.math.mbx'
+    'patterns': [
+      {
+        'include': 'text.tex'
+      }
+      {
+        'include': 'text.tex.latex'
+      }
+    ]
+  }
+  {
     'match': '(?=\\s)(?<=\\\\[\\w@]|\\\\[\\w@]{2}|\\\\[\\w@]{3}|\\\\[\\w@]{4}|\\\\[\\w@]{5}|\\\\[\\w@]{6})\\s'
     'name': 'meta.space-after-command.latex'
   }
@@ -754,38 +792,6 @@
     ]
   }
   {
-    'begin': '\\\\\\('
-    'beginCaptures':
-      '0':
-        'name': 'punctuation.definition.string.begin.latex'
-    'end': '\\\\\\)'
-    'endCaptures':
-      '0':
-        'name': 'punctuation.definition.string.end.latex'
-    'name': 'string.other.math.latex'
-    'patterns': [
-      {
-        'include': '$base'
-      }
-    ]
-  }
-  {
-    'begin': '\\\\\\['
-    'beginCaptures':
-      '0':
-        'name': 'punctuation.definition.string.begin.latex'
-    'end': '\\\\\\]'
-    'endCaptures':
-      '0':
-        'name': 'punctuation.definition.string.end.latex'
-    'name': 'string.other.math.latex'
-    'patterns': [
-      {
-        'include': '$base'
-      }
-    ]
-  }
-  {
     'match': '(?<!\\S)\'.*?\''
     'name': 'invalid.illegal.string.quoted.single.latex'
   }
@@ -812,7 +818,4 @@
   {
     'include': 'text.xml'
   }
-  # {
-  #   'include': 'text.tex'
-  # }
 ]
