@@ -41,14 +41,14 @@
     ]
   }
   {
-    'begin': '(\<(em)\>)'
+    'begin': '(\<(\\b(em|term)\\b)\>)'
     'beginCaptures':
       '1':
         'name': 'punctuation.definition.tag.xml'
       '2':
         'name': 'entity.name.tag.localname.xml'
     'contentName': 'markup.italic.emph.mbx'
-    'end': '(\<\/(em)\>)'
+    'end': '(\<\/(\\b(em|term)\\b)\>)'
     'endCaptures':
       '1':
         'name': 'punctuation.definition.tag.xml'
