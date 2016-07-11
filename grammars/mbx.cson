@@ -41,6 +41,27 @@
     ]
   }
   {
+    'begin': '(\<(em)\>)'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.definition.tag.xml'
+      '2':
+        'name': 'entity.name.tag.localname.xml'
+    'contentName': 'markup.italic.emph.mbx'
+    'end': '(\<\/(em)\>)'
+    'endCaptures':
+      '1':
+        'name': 'punctuation.definition.tag.xml'
+      '2':
+        'name': 'entity.name.tag.localname.xml'
+    'name': 'meta.tag.xml'
+    'patterns': [
+      {
+        'include': '$base'
+      }
+    ]
+  }
+  {
     'match': '(?=\\s)(?<=\\\\[\\w@]|\\\\[\\w@]{2}|\\\\[\\w@]{3}|\\\\[\\w@]{4}|\\\\[\\w@]{5}|\\\\[\\w@]{6})\\s'
     'name': 'meta.space-after-command.latex'
   }
@@ -516,27 +537,6 @@
     'endCaptures':
       '0':
         'name': 'punctuation.definition.footnote.end.latex'
-    'patterns': [
-      {
-        'include': '$base'
-      }
-    ]
-  }
-  {
-    'begin': '((\\\\)emph)(\\{)'
-    'beginCaptures':
-      '1':
-        'name': 'support.function.emph.latex'
-      '2':
-        'name': 'punctuation.definition.function.latex'
-      '3':
-        'name': 'punctuation.definition.emph.begin.latex'
-    'contentName': 'markup.italic.emph.latex'
-    'end': '\\}'
-    'endCaptures':
-      '0':
-        'name': 'punctuation.definition.emph.end.latex'
-    'name': 'meta.function.emph.latex'
     'patterns': [
       {
         'include': '$base'
