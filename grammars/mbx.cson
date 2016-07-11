@@ -1,7 +1,6 @@
-'fileTypes': [
-  'mbx'
-]
+'scopeName': 'text.xml.mbx'
 'name': 'Mathbook XML'
+'fileTypes': ['mbx']
 'patterns': [
   {
     'match': '(?=\\s)(?<=\\\\[\\w@]|\\\\[\\w@]{2}|\\\\[\\w@]{3}|\\\\[\\w@]{4}|\\\\[\\w@]{5}|\\\\[\\w@]{6})\\s'
@@ -813,5 +812,7 @@
   {
     'include': 'text.xml'
   }
+  # {
+  #   'include': 'text.tex'
+  # }
 ]
-'scopeName': 'text.xml.mbx'
