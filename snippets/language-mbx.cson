@@ -3,7 +3,12 @@
 # Document level
   'Part':
     'prefix': 'part'
-    'body': '\\\\paragraph{${1:part name}}\n\\\\label{part:${1:part label}}\n$2'
+    'body': """
+    <part>
+      <title>$1<\/title>
+      $2
+    <\/part>
+    $3"""
   'Chapter':
     'prefix': 'cha'
     'body': '\\\\chapter{${1:chapter name}}\n\\\\label{chap:${1:chapter label}}\n$2'
