@@ -2,7 +2,7 @@
 # The following contains snippets coopted from "language LaTeX" and converted from the Sublime plugin "MBXTools".
 # Document level
   'Part':
-    'prefix': 'part'
+    'prefix': '<part>'
     'body': """
     <part>
       <title>$1<\/title>
@@ -11,10 +11,20 @@
     $3"""
   'Chapter':
     'prefix': 'cha'
-    'body': '\\\\chapter{${1:chapter name}}\n\\\\label{chap:${1:chapter label}}\n$2'
+    'body': """
+    <chapter>
+      <title>$1<\/title>
+      $2
+    <\/chapter>
+    $3"""
   'Section':
     'prefix': 'sec'
-    'body': '\\\\section{${1:section name}}\n\\\\label{sec:${1:section label}}\n$2'
+    'body': """
+    <section xml:id=\"$1\">
+      <title>$2<\/title>
+      $3
+    <\/section>
+    $4"""
   'Sub Section':
     'prefix': 'sub'
     'body': '\\\\subsection{${1:subsection name}}\n\\\\label{sub:${1:subsection label}}\n$2'
