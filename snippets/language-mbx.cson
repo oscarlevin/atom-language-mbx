@@ -46,20 +46,17 @@
     'body': '<me>\n\t$1\n<\/me>\n$2'
 
 # Environement
-  'Align(ed)':
-    'prefix': 'ali'
-    'body': '\\\\begin{align}\n\t$1\n\\\\end{align}'
-  'Description':
-    'prefix': 'desc'
-    'body': '\\\\begin{description}\n\t\\\\item[$1]$2\n\\\\end{description}'
+  'Definition-list':
+    'prefix': 'dl'
+    'body': '<dl><li><title>$1<\/title>$2<\/li><\/dl>'
   'Enumerate':
-    'prefix': '<ol>'
+    'prefix': 'ol'
     'body': '<ol>\n\t<li>$1<\/li>\n<\/ol>'
   'Itemize':
-    'prefix': '<ul>'
+    'prefix': 'ul'
     'body': '<ul>\n\t<li>$1<\/li>\n<\/ul>'
-  'item'
-    'prefix': '<li>'
+  'item':
+    'prefix': 'li'
     'body': '<li>$1<\/li>\n$2'
 
 # Element
