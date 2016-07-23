@@ -97,11 +97,12 @@
     'body': '\\\\[\n\t$1\n\\\\]'
 
 # Others
-  '\\\\begin{}…\\\\end{}':
-    'prefix': 'begin'
-    'body': '\\\\begin{${1:env}}\n\t$2\n\\\\end{${1:env}}'
+  'begin-end':
+    'prefix': '\\\\begin'
+    'body': '<${1:env}>\n\t$2\n\\\\<\/${1:env}>'
 
 # Math, taken from  https://github.com/SublimeText/LaTeXTools/blob/master/LaTeX%20math.sublime-completions
+'string.other.math.mbx':
   'alpha':
     'prefix': 'a'
     'body': '\\\\alpha'
