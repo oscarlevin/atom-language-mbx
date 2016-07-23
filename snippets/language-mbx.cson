@@ -4,57 +4,38 @@
   'Part':
     'prefix': '<part>'
     'body': """
-    <part>
-      <title>$1<\/title>
-      $2
-    <\/part>
-    $3"""
-  'Chapter - ch':
-    'prefix': 'ch'
-    'body': """
-    <chapter>
-      <title>$1<\/title>
-      $2
-    <\/chapter>
-    $3"""
+    <part xml:id=\"$1\">
+      <title>$2<\/title>
+      $3
+    <\/part>"""
   'Chapter - <chapter>':
     'prefix': '<chapter>'
     'body': """
     <chapter xml:id=\"$1\">
       <title>$2<\/title>
       $3
-    <\/chapter>
-    $4"""
-  'Section':
-    'prefix': 'sec'
-    'body': """
-    <section xml:id=\"$1\">
-      <title>$2<\/title>
-      $3
-    <\/section>
-    $4"""
+    <\/chapter>"""
   'Section - <section>':
     'prefix': '<section>'
     'body': """
     <section xml:id=\"$1\">
       <title>$2<\/title>
       $3
-    <\/section>
-    $4"""
+    <\/section>"""
   'Sub Section':
     'prefix': '<subsection>'
     'body': """
     <subsection xml:id=\"$1\">
       <title>$2<\/title>
       $3
-    </\subsection>
-    $4"""
+    </\subsection>"""
   'Paragraph':
-    'prefix': '<p>'
+    'prefix': 'p'
     'body': """
     <p>
       $1
-    <\/p>"""
+    <\/p>
+    $2"""
 
 #Math mode
   'mathmode':
@@ -72,23 +53,14 @@
     'prefix': 'desc'
     'body': '\\\\begin{description}\n\t\\\\item[$1]$2\n\\\\end{description}'
   'Enumerate':
-    'prefix': 'enum'
-    'body': '\\\\begin{enumerate}\n\t\\\\item $1\n\\\\end{enumerate}'
+    'prefix': '<ol>'
+    'body': '<ol>\n\t<li>$1<\/li>\n<\/ol>'
   'Itemize':
-    'prefix': 'item'
-    'body': '\\\\begin{itemize}\n\t\\\\item $1\n\\\\end{itemize}'
-  'Split':
-    'prefix': 'spl'
-    'body': '\\\\begin{split}\n\t$0\n\\\\end{split}'
-  'Equation':
-    'prefix': 'eq'
-    'body': '\\\\begin{equation}\n\t$0\n\\\\end{equation}'
-  'Gather(ed)':
-      'prefix': 'gat'
-      'body': '\\\\begin{gather}\n\t$0\n\\\\end{gather}'
-  'Cases':
-      'prefix': 'cas'
-      'body': '\\\\begin{cases}\n\t${1:equation}, &\\\\text{ if }${2:case}\\\\\\\\\n\t$0\n\\\\end{cases}'
+    'prefix': '<ul>'
+    'body': '<ul>\n\t<li>$1<\/li>\n<\/ul>'
+  'item'
+    'prefix': '<li>'
+    'body': '<li>$1<\/li>\n$2'
 
 # Element
   'Figure':
