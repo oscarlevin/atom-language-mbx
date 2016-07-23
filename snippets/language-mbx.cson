@@ -9,14 +9,22 @@
       $2
     <\/part>
     $3"""
-  'Chapter':
-    'prefix': 'cha'
+  'Chapter - ch':
+    'prefix': 'ch'
     'body': """
     <chapter>
       <title>$1<\/title>
       $2
     <\/chapter>
     $3"""
+  'Chapter - <chapter>':
+    'prefix': '<chapter>'
+    'body': """
+    <chapter xml:id=\"$1\">
+      <title>$2<\/title>
+      $3
+    <\/chapter>
+    $4"""
   'Section':
     'prefix': 'sec'
     'body': """
@@ -25,18 +33,28 @@
       $3
     <\/section>
     $4"""
+  'Section - <section>':
+    'prefix': '<section>'
+    'body': """
+    <section xml:id=\"$1\">
+      <title>$2<\/title>
+      $3
+    <\/section>
+    $4"""
   'Sub Section':
-    'prefix': 'sub'
-    'body': '\\\\subsection{${1:subsection name}}\n\\\\label{sub:${1:subsection label}}\n$2'
-  'Sub Sub Section':
-    'prefix': 'subs'
-    'body': '\\\\subsubsection{${1:subsubsection name}}\n\\\\label{subs:${1:subsubsection label}}\n$2'
+    'prefix': '<subsection>'
+    'body': """
+    <subsection xml:id=\"$1\">
+      <title>$2<\/title>
+      $3
+    </\subsection>
+    $4"""
   'Paragraph':
-    'prefix': 'par'
-    'body': '\\\\paragraph{${1:paragraph name}}\n\\\\label{par:${1:paragraph label}}\n$2'
-  'Sub Paragraph':
-    'prefix': 'subp'
-    'body': '\\\\subparagraph{${1:subparagraph name}}\n\\\\label{subp:${1:subparagraph label}}\n$2'
+    'prefix': '<p>'
+    'body': """
+    <p>
+      $1
+    <\/p>"""
 
 # Environement
   'Align(ed)':
