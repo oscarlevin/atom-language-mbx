@@ -56,6 +56,14 @@
       $1
     <\/p>"""
 
+#Math mode
+  'mathmode':
+    'prefix': 'm'
+    'body': '<m>$1<\/m>$2'
+  'mathequation':
+    'prefix': 'me'
+    'body': '<me>\n\t$1\n<\/me>\n$2'
+
 # Environement
   'Align(ed)':
     'prefix': 'ali'
