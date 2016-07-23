@@ -11,7 +11,7 @@
     'endCaptures':
       '0':
         'name': 'punctuation.definition.string.end.latex'
-    'name': 'string.other.math.mbx'
+    'contentName': 'string.other.math.mbx'
     'patterns': [
       {
         'include': 'text.tex'
@@ -30,7 +30,7 @@
     'endCaptures':
       '0':
         'name': 'punctuation.definition.string.end.latex'
-    'name': 'string.other.math.mbx'
+    'contentName': 'string.other.math.mbx'
     'patterns': [
       {
         'include': 'text.tex'
