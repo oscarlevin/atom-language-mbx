@@ -96,10 +96,16 @@
     'prefix': '$$'
     'body': '\\\\[\n\t$1\n\\\\]'
 
-# Others
-  'begin-end':
-    'prefix': '\\\\begin'
-    'body': '<${1:env}>\n\t$2\n\\\\<\/${1:env}>'
+# general environment
+  '<env>':
+    'prefix': '<'
+    'body': '<${1:env}>\n\t$2\n<\/${1:env}>\n$3'
+  '<env id>':
+    'prefix': '<id'
+    'body': '<${1:env} xml:id=\"$2\">\n\t$3\n<\/${1:env}>\n$4'
+  'xml:id':
+    'prefix': 'id'
+    'body': 'xml:id=\"$1\"'
 
 # Math, taken from  https://github.com/SublimeText/LaTeXTools/blob/master/LaTeX%20math.sublime-completions
 'string.other.math.mbx':
