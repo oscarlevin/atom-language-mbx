@@ -84,14 +84,11 @@
 
 # Element
   'Figure':
-    'prefix': 'figure'
-    'body': 'Figure~\\\\ref{$1} $2'
-  'Listing':
-    'prefix': 'listing'
-    'body': '${1:Listing}~\\\\ref{${2:lst:}}$0'
-  'Page':
-    'prefix': 'page'
-    'body': '${1:page}~\\\\pageref{$2}$0'
+    'prefix': '<figure>'
+    'body': '<figure>\n\t$1\n<\/figure>\n$2'
+  'Figure -xmlid':
+    'prefix': 'fig'
+    'body': '<figure xml:id=\"$1\">\n\t$2\n<\/figure>\n$3'
   'Table':
     'prefix': 'table'
     'body': '${1:Table}~\\\\ref{${2:tab:}}$0'
@@ -417,32 +414,3 @@
   'split env':
     'prefix': 'sp'
     'body': '\\\\begin{split}\n$0\n\\\\end{split}\n'
-
-
-# Beamer
-'.text.tex.latex.beamer':
-  'Frame':
-    'prefix': 'frame'
-    'body': '\\\\begin{frame}[t]{${1:title}}\n\t${2:body}\n\\\\end{frame}\n%--- Next Frame ---%'
-  'Columns':
-    'prefix': 'cols'
-    'body': '\\\\begin{columns}\n\\\\begin{column}[T]{$1cm}\n$3\n\\\\end{column}\n\\\\hfill\n\\\\begin{column}[T]{$2cm}\n\n\\\\end{column}\n\\\\end{columns}\n'
-
-
-# Other
-'.text.tex.latex .meta.function.environment.list':
-  '\\\\item[description]':
-    'prefix': 'itd'
-    'body': '\\\\item[${1:description}] ${0:item}'
-
-# Unusable : Not yet placeholder duplication (e.g., \begin{$1} ... \end{$1})
-# More info : https://github.com/atom/snippets/issues/17
-# \\begin{}…\\end{}':
-#     'prefix': 'begin'
-#     'body': '\\\\begin{${1:env}}\n\t${1/(enumerate|itemize|list)|(description)|.*/(?1:\\item )(?2:\\item)/}$0\n\\\\end{${1:env}}'
-#   'Matrix':
-#     'prefix': 'mat'
-#     'body': '\\begin{${1:p/b/v/V/B/small}matrix}\n\t$0\n\\end{${1:p/b/v/V/B/small}matrix}'
-#   'Tabular':
-#     'prefix': 'tab'
-#     'body': '\\\\begin{${1:t}${1/(t)$|(a)$|(.*)/(?1:abular)(?2:rray)/}}{${2:c}}\n$0${2/((?<=[clr])([ |]*(c|l|r)))|./(?1: & )/g}\n\\\\end{${1:t}${1/(t)$|(a)$|(.*)/(?1:abular)(?2:rray)/}}'
