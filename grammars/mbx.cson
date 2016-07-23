@@ -12,10 +12,8 @@
       '0':
         'name': 'punctuation.definition.string.end.latex'
     'contentName': 'string.other.math.mbx'
+    'name': 'text.tex.latex'
     'patterns': [
-      {
-        'include': 'text.tex'
-      }
       {
         'include': 'text.tex.latex'
       }
@@ -31,10 +29,8 @@
       '0':
         'name': 'punctuation.definition.string.end.latex'
     'contentName': 'string.other.math.mbx'
+    'name': 'text.tex.latex'
     'patterns': [
-      {
-        'include': 'text.tex'
-      }
       {
         'include': 'text.tex.latex'
       }
@@ -817,5 +813,8 @@
   }
   {
     'include': 'text.xml'
+  }
+  {
+    'include': 'text.html'
   }
 ]
