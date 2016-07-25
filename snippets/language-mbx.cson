@@ -35,11 +35,14 @@
     <p>
       $1
     <\/p>
-    $2"""
+    """
 
 #Math mode
   'mathmode':
     'prefix': 'm'
+    'body': '<m>$1<\/m>$2'
+  'mathmode-alt':
+    'prefix': '$'
     'body': '<m>$1<\/m>$2'
   'mathequation':
     'prefix': 'me'
@@ -57,7 +60,7 @@
     'body': '<ul>\n\t<li>$1<\/li>\n<\/ul>'
   'item':
     'prefix': 'li'
-    'body': '<li>$1<\/li>\n$2'
+    'body': '<li>$1<\/li>\n'
 
 # Element
   'Figure':
@@ -76,10 +79,21 @@
 # general environment
   '<env>':
     'prefix': '<'
-    'body': '<${1:env}>\n\t$2\n<\/${1:env}>\n$3'
+    'body': '<${1:env}>\n\t$2\n<\/${1:env}>\n'
   '<env id>':
     'prefix': '<id'
     'body': '<${1:env} xml:id=\"$2\">\n\t$3\n<\/${1:env}>\n$4'
   'xml:id':
     'prefix': 'id'
     'body': 'xml:id=\"$1\"'
+  'inline env':
+    'prefix': 'i'
+    'body': '<$1>$2$<\/$1>$3'
+
+# text styles
+  'em':
+    'prefix': 'em'
+    'body': '<em>$1<\/em>$2'
+  'quote':
+    'prefix': 'q'
+    'body': '<q>$1<\/q>$2'
