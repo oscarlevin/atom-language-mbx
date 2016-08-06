@@ -47,6 +47,9 @@
   'mathequation':
     'prefix': 'me'
     'body': '<me>\n\t$1\n<\/me>\n$2'
+  'mathdisplay':
+    'prefix': 'md'
+    'body': '<md>\n\t<mrow>$1<\/mrow>\n<\/md>'
 
 # Environement
   'Definition-list':
@@ -61,6 +64,9 @@
   'item':
     'prefix': 'li'
     'body': '<li>$1<\/li>\n'
+  'title':
+    'prefix': 'title'
+    'body': '<title>$1<\/title>\n\t$2'
 
 # Element
   'Figure':
@@ -88,7 +94,7 @@
     'body': 'xml:id=\"$1\"'
   'inline env':
     'prefix': 'i'
-    'body': '<$1>$2$<\/$1>$3'
+    'body': '<$1>$2<\/$1>$3'
 
 # text styles
   'em':
@@ -97,3 +103,6 @@
   'quote':
     'prefix': 'q'
     'body': '<q>$1<\/q>$2'
+  'term':
+    'prefix': 't'
+    'body': '<term>$1<\/term>$2'

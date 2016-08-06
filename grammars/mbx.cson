@@ -20,11 +20,11 @@
     ]
   }
   {
-    'begin': '\<me\>'
+    'begin': '\<me\>|\<md\>'
     'beginCaptures':
       '0':
         'name': 'punctuation.definition.string.begin.latex'
-    'end': '\<\/me\>'
+    'end': '\<\/me\>|\<\/md\>'
     'endCaptures':
       '0':
         'name': 'punctuation.definition.string.end.latex'
