@@ -1,6 +1,6 @@
 'scopeName': 'text.xml.mbx'
 'name': 'Mathbook XML'
-'fileTypes': ['mbx']
+'fileTypes': ['mbx','ptx']
 'patterns': [
   {
     'begin': '\<m\>'

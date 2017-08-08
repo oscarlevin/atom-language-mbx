@@ -67,6 +67,9 @@
   'title':
     'prefix': 'title'
     'body': '<title>$1<\/title>\n\t$2'
+  'solution':
+    'previx': 'sol'
+    'body': '<solution>\n\t<p>\n\t$1\n<\/p>\n<\/solution>\n$2'
 
 # Element
   'Figure':
