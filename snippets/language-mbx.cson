@@ -57,19 +57,89 @@
     'body': '<dl><li><title>$1<\/title>$2<\/li><\/dl>'
   'Enumerate':
     'prefix': 'ol'
-    'body': '<ol>\n\t<li>$1<\/li>\n<\/ol>'
+    'body': """
+    <ol>
+      <li>
+        <p>
+          $1
+        <\/p>
+      <\/li>
+    <\/ol>"""
   'Itemize':
     'prefix': 'ul'
-    'body': '<ul>\n\t<li>$1<\/li>\n<\/ul>'
+    'body': """
+    <ul>
+      <li>
+        <p>
+          $1
+        <\/p>
+      <\/li>
+    <\/ul>"""
   'item':
     'prefix': 'li'
-    'body': '<li>$1<\/li>\n'
+    'body': """
+    <li>
+      <p>
+        $1
+      <\/p>
+    <\/li>"""
   'title':
     'prefix': 'title'
-    'body': '<title>$1<\/title>\n\t$2'
+    'body': '<title>$1<\/title>\n\n$2'
   'solution':
-    'previx': 'sol'
+    'prefix': 'sol'
     'body': '<solution>\n\t<p>\n\t$1\n<\/p>\n<\/solution>\n$2'
+  'hint':
+    'prefix': 'hint'
+    'body': '<hint>\n\t<p>\n\t$1\n<\/p>\n<\/hint>\n$2'
+  'answer':
+    'prefix': 'answer'
+    'body': '<answer>\n\t<p>\n\t$1\n<\/p>\n<\/answer>\n$2'
+  'statement':
+    'prfix': "statement"
+    'body': '<statement>\n\t<p>\n\t$1\n<\/p>\n<\/statement>\n$2'
+  'exercise':
+    'prefix': 'exercise'
+    'body':"""
+    <exercise>
+      <statement>
+        <p>
+          $1
+        <\/p>
+      <\/statement>
+      <solution>
+        <p>
+          $2
+        <\/p>
+      <\/solution>
+    <\/exercise>
+    $3"""
+  'ww-exercise':
+    'prefix': 'ww'
+    'body':"""
+    <exercise>
+      <webwork>
+        <setup>
+          <var>
+          <\/var>
+
+          <pg-code>
+          <\/pg-code>
+        <\/setup>
+
+        <statement>
+          <p>
+            $1
+          <\/p>
+        </statement>
+
+        <solution>
+          <p>
+          <\/p>
+        <\/solution>
+      <\/webwork>
+    <\/exercise>
+    """
 
 # Element
   'Figure':
