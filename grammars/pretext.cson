@@ -3,11 +3,11 @@
 'fileTypes': ['mbx','ptx']
 'patterns': [
   {
-    'begin': '\<m\>'
+    'begin': '\<m\>|\<usage\>'
     'beginCaptures':
       '0':
         'name': 'punctuation.definition.string.begin.latex'
-    'end': '\<\/m\>'
+    'end': '\<\/m\>|\<\/usage\>'
     'endCaptures':
       '0':
         'name': 'punctuation.definition.string.end.latex'
