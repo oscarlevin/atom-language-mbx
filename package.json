@@ -1,14 +1,14 @@
 {
-  "name": "language-mbx",
-  "main": "./lib/language-mbx",
-  "version": "0.0.0",
-  "description": "A suite of tools to facilitate writing math textbooks using Mathbook XML",
+  "name": "language-pretext",
+  "main": "./lib/language-pretext",
+  "version": "0.0.1",
+  "description": "A suite of tools to facilitate writing math textbooks using PreTeXt",
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "language-mbx:toggle"
+    "atom-workspace": "language-pretext:toggle"
   },
-  "repository": "https://github.com/oscarlevin/atom-language-mbx",
+  "repository": "https://github.com/oscarlevin/atom-language-pretext",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

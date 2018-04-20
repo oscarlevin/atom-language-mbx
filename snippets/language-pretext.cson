@@ -1,4 +1,4 @@
-'.text.xml.mbx':
+'.text.xml.ptx':
 # The following contains snippets coopted from "language LaTeX" and converted from the Sublime plugin "MBXTools".
 # Document level
   'Part':
@@ -98,6 +98,22 @@
   'statement':
     'prfix': "statement"
     'body': '<statement>\n\t<p>\n\t$1\n<\/p>\n<\/statement>\n$2'
+  'example':
+    'prefix': "example"
+    'body':"""
+    <example>
+      <statement>
+        <p>
+          $1
+        <\/p>
+      <\/statement>
+      <solution>
+        <p>
+          $2
+        <\/p>
+      <\/solution>
+    <\/example>
+    $3"""
   'exercise':
     'prefix': 'exercise'
     'body':"""
@@ -155,6 +171,16 @@
     'prefix': '$$'
     'body': '\\\\[\n\t$1\n\\\\]'
 
+# index
+  'index':
+    'prefix': 'idx'
+    'body': '<idx><h>$1<\/h>$2<\/idx>$3'
+
+#ref
+  'reference':
+    'prefix': 'ref'
+    'body': '<xref ref=\"$1\"\/>$2'
+
 # general environment
   '<env>':
     'prefix': '<'
@@ -164,7 +190,7 @@
     'body': '<${1:env} xml:id=\"$2\">\n\t$3\n<\/${1:env}>\n$4'
   'xml:id':
     'prefix': 'id'
-    'body': 'xml:id=\"$1\"'
+    'body': 'xml:id=\"$1\"$2'
   'inline env':
     'prefix': 'i'
     'body': '<$1>$2<\/$1>$3'
