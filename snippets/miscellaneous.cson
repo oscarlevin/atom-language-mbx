@@ -45,9 +45,9 @@
     prefix: 'latex-image'
     body: '''
     <latex-image>
-      \\begin{tikzpicture}
+      \\\\begin{tikzpicture}
         $1
-      \\end{tikzpicture}
+      \\\\end{tikzpicture}
     </latex-image>$0
     '''
   'description':
