@@ -1,0 +1,77 @@
+".text.xml.pretext":
+	'part':
+		prefix: "part"
+		body: '''
+		<part xml:id="part-$1>"
+			<title>$2</title>
+			$0
+		</chapter>
+		'''
+	'chapter':
+		prefix: "chapter"
+		body: '''
+		<chapter xml:id="ch-$1">
+			<title>$2</title>
+			$0
+		</chapter>
+		'''
+	'conclusion':
+		prefix: "conclusion"
+		body: '''
+		<conclusion>
+			$0
+		</conclusion>
+		'''
+	'exercises':
+		prefix: "exs"
+		body: '''
+		<exercises xml:id="exercises-$1">
+			$0
+		</exercises>
+		'''
+	'introduction':
+		prefix: "introduction"
+		body: '''
+		<introduction>
+			$0
+		</introduction>
+		'''
+	'paragraphs':
+		prefix: "paragraphs"
+		body: '''
+		<paragraphs xml:id="pars-$1">
+			<title>$2</title>
+			$0
+		</paragraphs>
+		'''
+	'references':
+		prefix: "references"
+		body: '''
+		<references xml:id="refs-$1">
+			$0
+		</references>
+		'''
+	'section':
+		prefix: "section"
+		body: '''
+		<section xml:id="sec-$1">
+			<title>$2</title>
+			$0
+		</section>
+		'''
+	'subsection':
+		prefix: "subsection"
+		body: '''
+		<subsection xml:id="subsec-$1">
+			<title>$2</title>
+			$0
+		</subsection>
+		'''
+	'subsubsection':
+		prefix: "subsubsection"
+		body: '''
+		<subsubsection xml:id="subsubsec-$1">
+			<title>$2</title>
+			$0
+		</subsubsection>
+		'''

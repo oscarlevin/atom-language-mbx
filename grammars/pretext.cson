@@ -1,4 +1,4 @@
-'scopeName': 'text.xml.ptx'
+'scopeName': 'text.xml.pretext'
 'name': 'PreTeXt'
 'fileTypes': ['mbx','ptx']
 'patterns': [
@@ -11,7 +11,7 @@
     'endCaptures':
       '0':
         'name': 'punctuation.definition.string.end.latex'
-    'contentName': 'string.other.math.ptx'
+    'contentName': 'string.other.math.pretext'
     'name': 'text.tex.latex'
     'patterns': [
       {
@@ -28,7 +28,7 @@
     'endCaptures':
       '0':
         'name': 'punctuation.definition.string.end.latex'
-    'contentName': 'string.other.math.ptx'
+    'contentName': 'string.other.math.pretext'
     'name': 'text.tex.latex'
     'patterns': [
       {
@@ -43,7 +43,7 @@
         'name': 'punctuation.definition.tag.xml'
       '2':
         'name': 'entity.name.tag.localname.xml'
-    'contentName': 'markup.italic.emph.ptx'
+    'contentName': 'markup.italic.emph.pretext'
     'end': '(\<\/(\\b(em|term)\\b)\>)'
     'endCaptures':
       '1':

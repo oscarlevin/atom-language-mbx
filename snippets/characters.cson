@@ -1,0 +1,137 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".text.xml.pretext":
+	emptytag:
+		prefix: "<empty>"
+		body: "<$1 />$0"
+	amp:
+		prefix: "amp"
+		body: "<ampersand />$0"
+	ampsym:
+		prefix: "&"
+		body: "<ampersand />$0"
+	asterisk:
+		prefix: "ast"
+		body: "<asterisk />$0"
+	backslash:
+		prefix: "bs"
+		body: "<backslash />$0"
+	backtick:
+		prefix: "bt"
+		body: "<backtick />$0"
+	caret:
+		prefix: "caret"
+		body: "<circumflex />$0"
+	dol:
+		prefix: "dol"
+		body: "<dollar />$0"
+	dolsym:
+		prefix: "$"
+		body: "<dollar />$0"
+	eg:
+		prefix: "eg"
+		body: "<eg />$0"
+	ell:
+		prefix: "ell"
+		body: "<ellipsis />$0"
+	ellldots:
+		prefix: "\\ldots"
+		body: "<ellipsis />$0"
+	elllsym:
+		prefix: "..."
+		body: "<ellipsis />$0"
+	etc:
+		prefix: "etc"
+		body: "<etc />$0"
+	fillin:
+		prefix: "fillin"
+		body: "<fillin />$0"
+	gt:
+		prefix: "gt"
+		body: "<greater />$0"
+	gtsym:
+		prefix: ">"
+		body: "<greater />$0"
+	hash:
+		prefix: "hash"
+		body: "<hash />$0"
+	hashsym:
+		prefix: "#"
+		body: "<hash />$0"
+	ie:
+		prefix: "ie"
+		body: "<ie />$0"
+	latex:
+		prefix: "latex"
+		body: "<latex />$0"
+	lbrace:
+		prefix: "lbrace"
+		body: "<lbrace />$0"
+	lt:
+		prefix: "lt"
+		body: "<less />$0"
+	lq:
+		prefix: "lq"
+		body: "<lq />$0"
+	lsq:
+		prefix: "lsq"
+		body: "<lsq />$0"
+	mdash:
+		prefix: "mdash"
+		body: "<mdash />$0"
+	mdashsym:
+		prefix: "---"
+		body: "<mdash />$0"
+	midpoint:
+		prefix: "midpoint"
+		body: "<midpoint />$0"
+	nbsp:
+		prefix: "space"
+		body: "<nbsp />$0"
+	ndash:
+		prefix: "ndash"
+		body: "<ndash />$0"
+	ndashsym:
+		prefix: "--"
+		body: "<ndash />$0"
+	pct:
+		prefix: "pct"
+		body: "<percent />$0"
+	pctsym:
+		prefix: "%"
+		body: "<percent />$0"
+	pretext:
+		prefix: "pretext"
+		body: "<pretext />$0"
+	rbrace:
+		prefix: "rbrace"
+		body: "<rbrace />$0"
+	rq:
+		prefix: "rq"
+		body: "<rq />$0"
+	rsq:
+		prefix: "rsq"
+		body: "<rsq />$0"
+	slash:
+		prefix: "slash"
+		body: "<slash />$0"
+	tex:
+		prefix: "tex"
+		body: "<tex />$0"
+	tilde:
+		prefix: "tilde"
+		body: "<tilde />$0"
+	tildesym:
+		prefix: "~"
+		body: "<tilde />$0"
+	times:
+		prefix: "times"
+		body: "<times />$0"
+	underscore:
+		prefix: "us"
+		body: "<underscore />$0"
+	underscoresym:
+		prefix: "_"
+		body: "<underscore />$0"
+	webwork:
+		prefix: "webwork"
+		body: "<webwork />$0"

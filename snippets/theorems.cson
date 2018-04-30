@@ -1,0 +1,203 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".text.xml.pretext":
+	algorithm:
+		prefix: "alg"
+		body: '''
+			<algorithm xml:id="alg-$1">
+				<statement>
+					<p>
+						$2
+					</p>
+				</statement>
+			</algorithm>
+			$0
+		'''
+	assemblage:
+		prefix: "assemblage"
+		body: '''
+			<assemblage xml:id="assemblage-$1">
+				<title>$2</title>
+				<p>
+					$3
+				</p>
+			</assemblage>
+			$0
+		'''
+	assumption:
+		prefix: "assumption"
+		body: '''
+			<assumption xml:id="assumption-$1">
+				<statement>
+					<p>
+						$2
+					</p>
+				</statement>
+			</assumption>
+			$0
+		'''
+	axiom:
+		prefix: "axiom"
+		body: '''
+			<axiom xml:id="axiom-$1">
+				<statement>
+					<p>
+						$2
+					</p>
+				</statement>
+			</axiom>
+			$0
+		'''
+	claim:
+		prefix: "claim"
+		body: '''
+			<claim xml:id="claim-$1">
+				<statement>
+					<p>
+						$2
+					</p>
+				</statement>
+			</claim>
+			$0
+		'''
+	conjecture:
+		prefix: "conjecture"
+		body: '''
+			<conjecture xml:id="conj-$1">
+				<statement>
+					<p>
+						$2
+					</p>
+				</statement>
+			</conjecture>
+			$0
+		'''
+	corollary:
+		prefix: "cor"
+		body: '''
+			<corollary xml:id="cor-$1">
+				<statement>
+					<p>
+						$2
+					</p>
+				</statement>
+			</corollary>
+			$0
+		'''
+	definition:
+		prefix: "def"
+		body: '''
+			<definition xml:id="def-$1">
+				<statement>
+					<p>
+						$2
+					</p>
+				</statement>
+			</definition>
+			$0
+		'''
+	fact:
+		prefix: "fact"
+		body: '''
+			<fact xml:id="fact-$1">
+				<statement>
+					<p>
+						$2
+					</p>
+				</statement>
+			</fact>
+			$0
+		'''
+	heuristic:
+		prefix: "heuristic"
+		body: '''
+			<heuristic xml:id="heuristic-$1">
+				<statement>
+					<p>
+						$2
+					</p>
+				</statement>
+			</heuristic>
+			$0
+		'''
+	hypothesis:
+		prefix: "hypothesis"
+		body: '''
+			<hypothesis xml:id="hyp-$1">
+				<statement>
+					<p>
+						$2
+					</p>
+				</statement>
+			</hypothesis>
+			$0
+		'''
+	identity:
+		prefix: "ident"
+		body: '''
+			<identity xml:id="ident-$1">
+				<statement>
+					<p>
+						$2
+					</p>
+				</statement>
+			</identity>
+			$0
+		'''
+	lemma:
+		prefix: "lem"
+		body: '''
+			<lemma xml:id="lem-$1">
+				<statement>
+					<p>
+						$2
+					</p>
+				</statement>
+			</lemma>
+			$0
+		'''
+	principle:
+		prefix: "principle"
+		body: '''
+			<principle xml:id="principle-$1">
+				<statement>
+					<p>
+						$2
+					</p>
+				</statement>
+			</principle>
+			$0
+		'''
+	proposition:
+		prefix: "prop"
+		body: '''
+			<proposition xml:id="prop-$1">
+				<statement>
+					<p>
+						$2
+					</p>
+				</statement>
+			</proposition>
+			$0
+		'''
+	theorem:
+		prefix: "thm"
+		body: '''
+		<theorem xml:id="thm-$1">
+			<statement>
+				<p>
+					$2
+				</p>
+			</statement>
+		</theorem>
+		$0
+		'''
+	proof:
+		prefix: "proof"
+		body: '''
+		<proof>
+			<p>
+				$1
+			</p>
+		</proof>
+		$0
+		'''

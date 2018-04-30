@@ -1,0 +1,48 @@
+".text.xml.pretext":
+  'definition-list':
+    prefix: 'dl'
+    body: '''
+      <dl>
+        <li>
+          <title>$1<\/title>
+          <p>
+            $2
+          </p>
+        </li>
+        $0
+      </dl>
+    '''
+  'enumerate':
+    prefix: 'ol'
+    body: '''
+    <ol>
+      <li>
+        <p>
+          $1
+        </p>
+      </li>
+      $0
+    </ol>
+    '''
+  'itemize':
+    prefix: 'ul'
+    body: '''
+    <ul>
+      <li>
+        <p>
+          $1
+        </p>
+      </li>
+      $0
+    </ul>
+    '''
+  'item':
+    prefix: 'li'
+    body: '''
+    <li>
+      <p>
+        $1
+      </p>
+    </li>
+    $0
+    '''
