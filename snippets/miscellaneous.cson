@@ -97,9 +97,9 @@
     prefix: 'notation'
     body:'''
     <notation>
-      <usage>{$1:(in math mode)}</usage>
+      <usage>${1:(in math mode)}</usage>
       <description>$2</description>
-    </notation>
+    </notation>$0
     '''
 
 #ref

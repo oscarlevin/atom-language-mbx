@@ -36,9 +36,6 @@
 	ellldots:
 		prefix: "\\ldots"
 		body: "<ellipsis />$0"
-	elllsym:
-		prefix: "..."
-		body: "<ellipsis />$0"
 	etc:
 		prefix: "etc"
 		body: "<etc />$0"
