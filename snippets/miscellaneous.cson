@@ -21,9 +21,8 @@
     body: '''
     <md>
       <mrow>$1 \\amp $2</mrow>
-      <mrow>$3 \\amp $4</mrow>$5
+      <mrow>$3 \\amp $4</mrow>$0
     </md>
-    $0
     '''
 
 
@@ -33,13 +32,13 @@
     body: '<figure>\n\t$1\n<\/figure>\n$2'
   'Figure -xmlid':
     prefix: 'ifig'
-    body: '<figure xml:id=\"$1\">\n\t$2\n<\/figure>\n$0'
+    body: '<figure xml:id=\"$1\">\n\t$2\n<\/figure>\n'
   'image':
     prefix: 'image'
     body:'''
     <image xml:id="$1">
       $2
-    </image>$0
+    </image>
     '''
   'latex-image':
     prefix: 'latex-image'
@@ -48,14 +47,14 @@
       \\\\begin{tikzpicture}
         $1
       \\\\end{tikzpicture}
-    </latex-image>$0
+    </latex-image>
     '''
   'description':
     prefix: 'description'
     body: '<description>$1</description>$0'
   'caption':
     prefix: 'caption'
-    body: '<caption>$1</caption>$0'
+    body: '<caption>$1</caption>'
   'sidebyside':
     prefix: 'sidebyside'
     body: '<sidebyside width="$1">\n\t$2\n</sidebyside>'
@@ -99,7 +98,7 @@
     <notation>
       <usage>${1:(in math mode)}</usage>
       <description>$2</description>
-    </notation>$0
+    </notation>
     '''
 
 #ref
@@ -107,10 +106,14 @@
     prefix: 'ref'
     body: '<xref ref=\"$1\"\/>$0'
 
+  'footnote':
+    prefix: 'fn'
+    body: '<fn>$1</fn>'
+
 #Objectives
   'objectives':
     prefix: 'objectives'
-    body:'<objectives>\n\t$1\n</objectives>\n$0'
+    body:'<objectives>\n\t$1\n</objectives>\n'
 
 # general environment
   '<env>':
@@ -118,7 +121,7 @@
     body: '<${1:env}>\n\t$2\n<\/${1:env}>\n'
   '<env id>':
     prefix: '<id'
-    body: '<${1:env} xml:id=\"$2\">\n\t$3\n<\/${1:env}>\n$0'
+    body: '<${1:env} xml:id=\"$2\">\n\t$3\n<\/${1:env}>\n'
   'xml:id':
     prefix: 'id'
     body: 'xml:id=\"$1\"$2'

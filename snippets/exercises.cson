@@ -16,7 +16,7 @@
         </p>
       </solution>
     </example>
-    $0'''
+    '''
   'problem':
     prefix: 'problem'
     body:'''
@@ -32,7 +32,7 @@
         </p>
       </solution>
     </problem>
-    $0'''
+    '''
   'question':
     prefix: 'question'
     body:'''
@@ -48,7 +48,7 @@
         </p>
       </solution>
     </question>
-    $0'''
+    '''
 
   'exercise':
     prefix: 'exercise'
@@ -65,7 +65,7 @@
         </p>
       </solution>
     </exercise>
-    $0'''
+    '''
   'exercise-WeBWorK':
     prefix: 'ww'
     body:'''
@@ -120,13 +120,13 @@
     body: '<title>$1<\/title>\n\n$0'
   'solution':
     prefix: 'solution'
-    body: '<solution>\n\t<p>\n\t$1\n<\/p>\n<\/solution>\n$0'
+    body: '<solution>\n\t<p>\n\t$1\n<\/p>\n<\/solution>'
   'hint':
     prefix: 'hint'
-    body: '<hint>\n\t<p>\n\t$1\n<\/p>\n<\/hint>\n$0'
+    body: '<hint>\n\t<p>\n\t$1\n<\/p>\n<\/hint>\n'
   'answer':
     prefix: 'answer'
-    body: '<answer>\n\t<p>\n\t$1\n<\/p>\n<\/answer>\n$0'
+    body: '<answer>\n\t<p>\n\t$1\n<\/p>\n<\/answer>\n'
   'statement':
     prefix: "statement"
-    body: '<statement>\n\t<p>\n\t$1\n<\/p>\n<\/statement>\n$0'
+    body: '<statement>\n\t<p>\n\t$1\n<\/p>\n<\/statement>\n'
