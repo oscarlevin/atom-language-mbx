@@ -1,4 +1,4 @@
-# These are basic snippets for exampls, exercises and PROJECT-like environments.
+# These are basic snippets for exampls, exercises environments.
 # Also included are snippets for statements, hints, solutions, answers and title, that would often need to go inside these.
 ".text.xml.pretext":
   'example':
@@ -49,7 +49,6 @@
       </solution>
     </question>
     '''
-
   'exercise':
     prefix: 'exercise'
     body:'''
@@ -74,17 +73,14 @@
         <setup>
           <var>
           </var>
-
           <pg-code>
           </pg-code>
         </setup>
-
         <statement>
           <p>
             $1
           </p>
         </statement>
-
         <solution>
           <p>
           </p>
@@ -92,41 +88,3 @@
       </webwork>
     </exercise>
     '''
-
-#PROJECT-LIKE:
-	'activity':
-		prefix: 'activity'
-		body: '<activity>\n\t$1\n</activity>'
-
-	'exploration':
-		prefix: 'exploration'
-		body: '<exploration>\n\t$1\n</exploration>'
-
-	'investigation':
-		prefix: 'investigation'
-		body: '<investigation>\n\t$1\n</investigation>'
-
-	'project':
-		prefix: 'project'
-		body: '<project>\n\t$1\n</project>'
-#Note, tasks now live inside of PORJECT-LIKE, but are formatted the same.
-	'task':
-		prefix: 'task'
-		body: '<task>\n\t$1\n</task>'
-
-#Support elements (statement, solution,etc.):
-  'title':
-    prefix: 'title'
-    body: '<title>$1<\/title>\n\n$0'
-  'solution':
-    prefix: 'solution'
-    body: '<solution>\n\t<p>\n\t$1\n<\/p>\n<\/solution>'
-  'hint':
-    prefix: 'hint'
-    body: '<hint>\n\t<p>\n\t$1\n<\/p>\n<\/hint>\n'
-  'answer':
-    prefix: 'answer'
-    body: '<answer>\n\t<p>\n\t$1\n<\/p>\n<\/answer>\n'
-  'statement':
-    prefix: "statement"
-    body: '<statement>\n\t<p>\n\t$1\n<\/p>\n<\/statement>\n'

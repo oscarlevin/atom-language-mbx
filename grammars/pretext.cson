@@ -788,14 +788,6 @@
     ]
   }
   {
-    'match': '(?<!\\S)\'.*?\''
-    'name': 'invalid.illegal.string.quoted.single.latex'
-  }
-  {
-    'match': '(?<!\\S)".*?"'
-    'name': 'invalid.illegal.string.quoted.double.latex'
-  }
-  {
     'captures':
       '1':
         'name': 'punctuation.definition.constant.latex'

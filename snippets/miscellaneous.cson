@@ -20,10 +20,13 @@
     prefix: 'md'
     body: '''
     <md>
-      <mrow>$1 \\amp $2</mrow>
-      <mrow>$3 \\amp $4</mrow>$0
+      <mrow>$1 \\\\amp $2</mrow>
+      <mrow>$3 \\\\amp $4</mrow>$0
     </md>
     '''
+  'mrow':
+    prefix: 'mrow'
+    body: '<mrow> $1 \\\\amp $2</mrow>$0'
 
 
 # figure/table
@@ -115,13 +118,49 @@
     prefix: 'objectives'
     body:'<objectives>\n\t$1\n</objectives>\n'
 
+  'title':
+    prefix: 'title'
+    body: '<title>$1</title>\n\n$2'
+  'statement':
+    prefix: 'statement'
+    body: '''
+    <statement>
+      <p>
+        $1
+      </p>
+    </statement>
+    '''
+  'solution':
+    prefix: 'solution'
+    body: '''
+    <solution>
+      <p>
+        $1
+      </p>
+    </solution>'''
+  'hint':
+    prefix: 'hint'
+    body: '''
+    <hint>
+      <p>
+        $1
+      </p>
+    </hint>'''
+  'answer':
+    prefix: 'answer'
+    body: '''
+    <answer>
+      <p>
+        $1
+      </p>
+    </answer>'''
 # general environment
   '<env>':
     prefix: '<'
-    body: '<${1:env}>\n\t$2\n<\/${1:env}>\n'
+    body: '<${1:env}>\n\t$2\n<\/${1:env}>'
   '<env id>':
     prefix: '<id'
-    body: '<${1:env} xml:id=\"$2\">\n\t$3\n<\/${1:env}>\n'
+    body: '<${1:env} xml:id=\"$2\">\n\t$3\n<\/${1:env}>'
   'xml:id':
     prefix: 'id'
     body: 'xml:id=\"$1\"$2'
@@ -151,3 +190,8 @@
   'initialisms':
     prefix: 'init'
     body: '<init>$1</init>$0'
+
+  # webwork var:
+  'var':
+    prefix: 'var'
+    body: '<var name="$1" width="$2"/>$0'

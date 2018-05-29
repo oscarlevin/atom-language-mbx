@@ -1,0 +1,18 @@
+# These are basic snippets for exampls, exercises environments.
+# Also included are snippets for statements, hints, solutions, answers and title, that would often need to go inside these.
+".text.xml.pretext":
+	'activity':
+		prefix: 'activity'
+		body: '<activity>\n\t$1\n</activity>'
+	'exploration':
+		prefix: 'exploration'
+		body: '<exploration>\n\t$1\n</exploration>'
+	'investigation':
+		prefix: 'investigation'
+		body: '<investigation>\n\t$1\n</investigation>'
+	'project':
+		prefix: 'project'
+		body: '<project>\n\t$1\n</project>'
+	'task':
+		prefix: 'task'
+		body: '<task>\n\t$1\n</task>'
