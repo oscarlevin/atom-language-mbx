@@ -1,5 +1,5 @@
 '.text.xml.pretext':
-# The following contains snippets coopted from "language LaTeX" and converted from the Sublime plugin "MBXTools".
+# The following contains snippets coopted from "language LaTeX" and converted from the Sublime plugin "PreTeXtual".
 # Paragraphs
   'Paragraph':
     prefix: 'p'
