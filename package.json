@@ -1,7 +1,7 @@
 {
   "name": "language-pretext",
   "main": "./lib/language-pretext",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Adds grammar support for PreTeXt as well as a large number of snippets and shortcuts to speed up writing.",
   "keywords": [],
   "activationCommands": {
