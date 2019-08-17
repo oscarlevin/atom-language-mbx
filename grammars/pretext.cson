@@ -2,6 +2,38 @@
 'name': 'PreTeXt'
 'fileTypes': ['mbx','ptx']
 'patterns': [
+		{
+			"match": "(<)(\\S*)(.*?)?\\s(permid=\"...\")(.*?)?(>)",
+			"captures": {
+				"1": {
+					"name": "punctuation.definition.tag.xml"
+				},
+				"2": {
+					"name": "entity.name.tag.localname.xml"
+				},
+				"3": {
+					"patterns": [
+						{
+							"include": "text.xml#tagStuff"
+						}
+					]
+				},
+				"4": {
+					"name": "comment.inline.permid"
+				},
+				"5": {
+					"patterns": [
+						{
+							"include": "text.xml#tagStuff"
+						}
+					]
+				},
+				"6": {
+					"name": "punctuation.definition.tag.xml"
+				}
+			},
+			"name": "meta.tag.xml"
+		}
   {
     'begin': '\<m\>|\<usage\>'
     'beginCaptures':
@@ -12,7 +44,7 @@
       '0':
         'name': 'punctuation.definition.string.end.latex'
     'contentName': 'string.other.math.pretext'
-    'name': 'text.tex.latex'
+    'name': 'text.ptx.latex'
     'patterns': [
       {
         'include': 'text.tex.latex'
@@ -29,7 +61,7 @@
       '0':
         'name': 'punctuation.definition.string.end.latex'
     'contentName': 'string.other.math.pretext'
-    'name': 'text.tex.latex'
+    'name': 'text.ptx.latex'
     'patterns': [
       {
         'include': 'text.tex.latex'
@@ -805,8 +837,5 @@
   }
   {
     'include': 'text.xml'
-  }
-  {
-    'include': 'text.html'
   }
 ]
