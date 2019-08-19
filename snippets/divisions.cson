@@ -2,10 +2,10 @@
 	'part':
 		prefix: "part"
 		body: '''
-		<part xml:id="part-$1>"
-			<title>$2</title>
+		<part xml:id="part-${1/^(\w+)|\s(\w+)|['](\w*)|\W*$/${1:/downcase}${2:+-}${2:/downcase}${3:/downcase}/g}">
+			<title>$1</title>
 			$0
-		</chapter>
+		</part>
 		'''
 	'chapter':
 		prefix: "chapter"
